@@ -5,7 +5,7 @@ public class Ej4_Boletin2_1 {
         Scanner sc = new Scanner(System.in);
         int num;
         int vida = 5;
-        int num_aleatorio = (int) (Math.random() * 100) + 1;
+        int num_aleatorio = (int) (Math.random() * 100) + 1;//introducimos el numero aleatorio
         do {
             System.out.println("introduce el numero");
             num = sc.nextInt();
