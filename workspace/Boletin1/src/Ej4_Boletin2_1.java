@@ -15,8 +15,8 @@ public class Ej4_Boletin2_1 {
             } else if (num > num_aleatorio && num > 1 && num < 100) {
                 System.out.println(num + " esta por encima");
 
-            } else if (num > num_aleatorio || num < 1 || num > 100) {
-
+            } else if ( num < 1 || num > 100) {
+                System.out.println("error vuelve a introcir");
             }
             vida--;
         } while (vida > 0 && num != num_aleatorio);
