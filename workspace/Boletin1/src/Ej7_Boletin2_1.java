@@ -14,6 +14,6 @@ public class Ej7_Boletin2_1 {
             System.out.println("Introduce otro numero");
             num2 = sc.nextInt();
         }while (num2 < 1 );
-        
+
     }
 }
