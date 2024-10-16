@@ -36,7 +36,7 @@ public class Ej4_Boletin2_2 {
 
 
         System.out.printf("La hora resultante es %02d:%02d:%02d +%d dias",
-                hf, mf, sf, dias);
+               hf, mf, sf, dias);
         ;
     }
 }
