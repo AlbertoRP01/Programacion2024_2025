@@ -9,7 +9,7 @@ public class Ej_Crear_Arbol_Boletin_Refuerzo {
         altura = sc.nextInt();
 
         for (int i = 0; i < altura; i++) {
-            for (int j = 0; j < altura - i ; j++) {
+            for (int j = 0; j < altura - 1 - i; j++) {
                 System.out.print(" ");
 
             }
@@ -18,7 +18,5 @@ public class Ej_Crear_Arbol_Boletin_Refuerzo {
             }
             System.out.println();
         }
-
-
     }
 }
