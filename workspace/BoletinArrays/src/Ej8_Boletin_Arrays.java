@@ -1,12 +1,12 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Ej8_BoletinArrays {
+public class Ej8_Boletin_Arrays {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Introduce un numero");
         int numero = sc.nextInt();
-        int[] array= {1,2,3,4,5,6,7,8,9};
+        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
         int resultado = posicionArray(array, numero);
 
@@ -24,10 +24,10 @@ public class Ej8_BoletinArrays {
     private static int posicionArray(int[] array, int numero) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == numero) {
-                return  i;
+                return i;
             }
 
         }
-        return -1 ;
+        return -1;
     }
 }
