@@ -1,3 +1,4 @@
+/*
 import com.sun.jdi.Value;
 
 import java.util.Scanner;
@@ -27,7 +28,6 @@ public class Ej4_Boletin2_2 {
 
         }
 
-<<<<<<< HEAD
         dias = (hf + h2) / 24;
 
         hf = (hf + h2) % 24;
@@ -36,7 +36,7 @@ public class Ej4_Boletin2_2 {
         System.out.printf("La hora resultante es %02d:%02d:%02d +%d dias",
                hf, mf, sf, dias);
         ;
-=======
->>>>>>> 6abb1581e6794d00c9d64261d511dc3290f71c67
+
     }
 }
+*/

@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -12,7 +13,8 @@ public class Ej4Boletin_Arrays {
         rellenaArray(miArray);
         calcularMedia(miArray);
         numeroTerminacionMax(miArray);
-
+        ultimoDigNulo(miArray);
+      calculaPorcentajeDigTotalCreado(miArray);
     }
 
     /**
@@ -54,8 +56,37 @@ public class Ej4Boletin_Arrays {
         System.out.println(Arrays.toString(repeticionTerminaciones));
     }
 
-    private static void numeroTerminacionNula(int[] array) {
-        
+    private static int ultimoDigNulo(int[] array) {
+        int[] array2 = new int[10];
+        for (int i = 0; i < array.length; i++) {
+            int ultimoDigito = array[i] % 10;
+            array2[ultimoDigito]++;
+        }
+        int indice = -1;//Introducimos -1 para que no muestre un digito equivocado por si se repiten mucho
+        for (int i = 0; i < array2.length; i++) {
+            if (array2[i] == 0) {
+                indice = i;
+            }
+        }
+        return indice;
+    }
+
+    private static void calculaPorcentajeDigTotalCreado(int[] array) {
+        String numero = "";
+        int[]digito = new int[10];
+        int sumaporcentajes= 0;
+        for (int i = 0; i < array.length; i++) {
+            digito[array[i]%10]++;
+
+            float porcentaje= (float) (array[i] *100)/TAMANNO;
+            numero+= "EL valor "+i+"se ha repetido"+digito[i]+ "veces, sale " ;
+
+            numero+= "la suma total del porcentaje de las apariciones es: " + String.format("" +porcentaje );
+            numero+="La media para cada valor debe estar en:"+String.format("" );
+             // return; numero;
+
+
+        }
     }
 
 }
