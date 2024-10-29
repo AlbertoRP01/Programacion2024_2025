@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Ej10_BoletinArrays {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] array = {1, 2, 3, 5, 5, 5, 7, 8, 9};
         int[] nuevoArray = eliminarDuplicados(array);
         System.out.println(Arrays.toString(nuevoArray));
     }
@@ -26,11 +26,18 @@ public class Ej10_BoletinArrays {
         int indiceCopia = 0;
         for (int i = 0; i < array.length; i++) {
             if (buscarNumero(nuevoArray, array[i]) == -1) {
-                nuevoArray[indiceCopia++] = array[i];
-
+                nuevoArray[indiceCopia] = array[i];
+                indiceCopia++;
 
             }
         }
-        return nuevoArray;
+        int[] arrayTamanoOk = new int[indiceCopia];//hago un nuevo array con la copia del indice del anterio array
+
+
+        for (int i = 0; i < arrayTamanoOk.length; i++) {
+            arrayTamanoOk[i] = nuevoArray[i];//lo que hacemos es que cuando se duplique el numero dentro del array lo quita
+        }
+
+        return arrayTamanoOk;
     }
 }
